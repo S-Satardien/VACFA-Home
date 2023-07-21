@@ -1,8 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Columns and Two Rows Layout</title>
+  <style>
+    /* Styles for the container div */
+    .container {
+      display: flex; /* Use Flexbox */
+      flex-wrap: wrap; /* Wrap items onto multiple lines if needed */
+    }
 
+    /* Styles for the items (columns) inside the container */
+    .item {
+      flex-basis: 50%; /* Each item will take 50% of the container's width */
+      padding: 20px; /* Add padding for better spacing */
+      
+      box-sizing: border-box; /* Include padding in the item's total width */
+      text-align: center; /* Center align text inside each item */
+    }
 
-<div id="div1"> <p> Test 1 </p> </div>
-<div id="div2"> <p> Test 1 </p> </div>
-<div id="div3"> <p> Test 1 </p> </div>
-<div id="div4"> <p> Test 1 </p></div>
+    /* Styles for the button inside each item */
+    .item button {
+      margin-top: 10px; /* Add spacing between text and button */
+      padding: 10px 20px; /* Add padding to the button */
+      background-color: #FF0000; /* Green background color */
+      color: #ffffff; /* White text color */
+      border: none; /* Remove button border */
+      border-radius: 5px; /* Add rounded corners */
+      cursor: pointer; /* Add pointer cursor on hover */
+      transition: background-color 0.3s; /* Smooth transition effect for background color change */
+    }
 
-<link rel="stylesheet" type="text/css" href="index.css" />
+    /* Hover styles for the button */
+    .item button:hover {
+      background-color: #d6204e; /* Darker green on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- First row -->
+    <div class="item">
+      <h1>The Beginning</h1>
+	<p>​​The Vaccines for Africa Initiative (VACFA) is a non-profit academic unit founded in 2009 by Professor Gregory Hussey, who is the Director. We are in the Department of Public Health and Family Medicine, within Faculty of Health Sciences at the University of Cape Town..</p>
+    <button>Learn More</button>
+      
+    </div>
+    <div class="item">
+      <h1>Meet our Team</h1>
+	<p>​​The VACFA team is a diverse mixture of respected professionals.....</p>
+    <button>Learn More</button>
+      
+    </div>
+
+    <!-- Second row -->
+    <div class="item">
+       <h1>Mission and Vision</h1>
+	<p>​​Our carefully crafted Vision and Mission is the drive behind what we do.....</p>
+    <button>Learn More</button>
+    </div>
+    <div class="item">
+      <h1>The Beginning</h1>
+	<p>​​The team is filled with renowned scholars and as a unit we have published articles and papers on...</p>
+    <button>Learn More</button>
+    </div>
+  </div>
+</body>
+</html>
