@@ -6,39 +6,50 @@
   <style>
     /* Styles for the container div */
     .container {
-      display: flex; /* Use Flexbox */
-      flex-wrap: wrap; /* Wrap items onto multiple lines if needed */
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px; /* Set maximum width for the container */
+      margin: 0 auto; /* Center the container horizontally */
     }
 
     /* Styles for the items (columns) inside the container */
     .item {
-      flex-basis: 50%; /* Each item will take 50% of the container's width */
-      padding: 20px; /* Add padding for better spacing */
-      font-family: 'Roboto', sans-serif; /* Use the Roboto font for the text */
-      box-sizing: border-box; /* Include padding in the item's total width */
-      text-align: justify; /* Text justified */
-      display: flex; /* Use Flexbox */
-      flex-direction: column; /* Stack content vertically */
-      justify-content: space-between; /* Vertically center content */
-      height: 400px; /* Set a fixed height for the boxes */
-      padding-bottom: 50px; /* Add bottom padding to create space for the button */
+      flex-basis: 50%;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 700px; /* Set a fixed height for the boxes */
+      padding-bottom: 50px;
+      background-color: #f9f9f9; /* Light gray background color */
+      border: 1px solid #ccc; /* Add a border to the boxes */
+      border-radius: 10px; /* Add rounded corners */
     }
 
     /* Styles for the button inside each item */
-    .item button {
-      font-family: 'Roboto', sans-serif; /* Use the Roboto font for the text */
-      padding: 10px 20px; /* Add padding to the button */
-      background-color: #FF0000; /* Green background color */
-      color: #ffffff; /* White text color */
-      border: none; /* Remove button border */
-      border-radius: 5px; /* Add rounded corners */
-      cursor: pointer; /* Add pointer cursor on hover */
-      transition: background-color 0.3s; /* Smooth transition effect for background color change */
+    .item a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none; /* Remove underline for the link */
     }
 
-    /* Hover styles for the button */
+    .item button {
+      font-family: 'Roboto', sans-serif;
+      padding: 10px 20px;
+      background-color: #FF0000;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
     .item button:hover {
-      background-color: #d6204e; /* Darker green on hover */
+      background-color: #d6204e;
     }
   </style>
 </head>
