@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Two Columns and Two Rows Layout</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     /* Styles for the container div */
     .container {
@@ -16,13 +16,17 @@
       padding: 20px; /* Add padding for better spacing */
       font-family: 'Roboto', sans-serif; /* Use the Roboto font for the text */
       box-sizing: border-box; /* Include padding in the item's total width */
-      ttext-align: justify; /* Text justified */
+      text-align: justify; /* Text justified */
+      display: flex; /* Use Flexbox */
+      flex-direction: column; /* Stack content vertically */
+      justify-content: space-between; /* Vertically center content */
+      height: 300px; /* Set a fixed height for the boxes */
     }
 
     /* Styles for the button inside each item */
     .item button {
-      margin-top: 10px; /* Add spacing between text and button */
-font-family: 'Roboto', sans-serif; /* Use the Roboto font for the text */
+      margin-top: auto; /* Push the button to the bottom */
+      font-family: 'Roboto', sans-serif; /* Use the Roboto font for the text */
       padding: 10px 20px; /* Add padding to the button */
       background-color: #FF0000; /* Green background color */
       color: #ffffff; /* White text color */
@@ -43,28 +47,27 @@ font-family: 'Roboto', sans-serif; /* Use the Roboto font for the text */
     <!-- First row -->
     <div class="item">
       <h1>The Beginning</h1>
-	<p>​​The Vaccines for Africa Initiative (VACFA) is a non-profit academic unit founded in 2009 by Professor Gregory Hussey, who is the Director. We are in the Department of Public Health and Family Medicine, within Faculty of Health Sciences at the University of Cape Town..</p>
-    <a href="https://health.uct.ac.za/vacfa/about-vacfa/who-we-are"><button>Learn More</button></a>
-      
+      <p>​​The Vaccines for Africa Initiative (VACFA) is a non-profit academic unit founded in 2009 by Professor Gregory Hussey, who is the Director. We are in the Department of Public Health and Family Medicine, within Faculty of Health Sciences at the University of Cape Town.</p>
+      <a href="https://health.uct.ac.za/vacfa/about-vacfa/who-we-are"><button>Learn More</button></a>
     </div>
     <div class="item">
       <h1>Meet the Team</h1>
-	<p>Our exceptional team at VACFA is driven by passion, expertise, and a shared dedication to fostering a healthier continent through vaccination. With distinguished researchers, healthcare professionals, and visionary leaders, we curate cutting-edge resources and provide comprehensive training to empower individuals across Africa. As a leading destination for knowledge, innovation, and progress in immunization, we are committed to shaping a brighter, healthier future for Africa and beyond through education and practical expertise. Together, we make a lasting impact, one that positively transforms healthcare across the continent.</p>
-   <a href="https://health.uct.ac.za/vacfa/about-vacfa/vacfa-team"><button>Learn More</button></a>
-      
+      <p>Our exceptional team at VACFA is driven by passion, expertise, and a shared dedication to fostering a healthier continent through vaccination. With distinguished researchers, healthcare professionals, and visionary leaders, we curate cutting-edge resources and provide comprehensive training to empower individuals across Africa. As a leading destination for knowledge, innovation, and progress in immunization, we are committed to shaping a brighter, healthier future for Africa and beyond through education and practical expertise. Together, we make a lasting impact, one that positively transforms healthcare across the continent.</p>
+      <a href="https://health.uct.ac.za/vacfa/about-vacfa/vacfa-team"><button>Learn More</button></a>
     </div>
 
     <!-- Second row -->
     <div class="item">
-       <h1>Mission and Vision</h1>
-	<p>​​Our carefully crafted Vision and Mission is the drive behind what we do.....</p>
-    <a href="https://health.uct.ac.za/vacfa/about-vacfa/vision-mission"><button>Learn More</button></a>
+      <h1>Mission and Vision</h1>
+      <p>​​Our carefully crafted Vision and Mission is the drive behind what we do.....</p>
+      <a href="https://health.uct.ac.za/vacfa/about-vacfa/vision-mission"><button>Learn More</button></a>
     </div>
     <div class="item">
       <h1>Our Research</h1>
-	<p>​​The team at Vaccines for Africa Initiative (VACFA) comprises a remarkable assembly of renowned scholars, each bringing their invaluable expertise and vast knowledge to our collective efforts. As a cohesive and passionate unit, we have collaborated on numerous groundbreaking research projects, diligently crafting articles and papers on a diverse array of topics. </p>
-    <a href="https://health.uct.ac.za/vacfa/our-research/published-studies"><button>Learn More</button></a>
+      <p>​​The team at Vaccines for Africa Initiative (VACFA) comprises a remarkable assembly of renowned scholars, each bringing their invaluable expertise and vast knowledge to our collective efforts. As a cohesive and passionate unit, we have collaborated on numerous groundbreaking research projects, diligently crafting articles and papers on a diverse array of topics. </p>
+      <a href="https://health.uct.ac.za/vacfa/our-research/published-studies"><button>Learn More</button></a>
     </div>
   </div>
 </body>
 </html>
+
