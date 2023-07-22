@@ -14,8 +14,8 @@
 
     /* Styles for the items (columns) inside the container */
     .item {
-      flex-basis: 50%;
-      padding: 20px;
+      flex-basis: calc(50% - 20px); /* Adjust flex-basis to account for padding */
+      padding: 20px; /* Add padding to each column */
       font-family: 'Roboto', sans-serif;
       box-sizing: border-box;
       text-align: justify;
@@ -24,7 +24,6 @@
       justify-content: space-between;
       align-items: flex-start; /* Align content to the top */
       max-height: 340px; /* Set a maximum height for the boxes */
-      padding-bottom: 50px;
       background-color: #f9f9f9; /* Light gray background color */
       border: 1px solid #ccc; /* Add a border to the boxes */
       border-radius: 10px; /* Add rounded corners */
