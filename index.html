@@ -77,9 +77,9 @@
     }
   </style>
   <script>
-    // Function to handle button click and open links in the parent tab
+    // Function to handle button click and open links in a new tab
     function openInParentTab(url) {
-      window.top.location.href = url;
+      window.open(url, '_blank');
     }
   </script>
 </head>
@@ -111,5 +111,6 @@
   </div>
 </body>
 </html>
+
 
 
