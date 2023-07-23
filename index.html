@@ -4,11 +4,16 @@
   <title>Two Columns and Two Rows Layout</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Set the viewport to ensure proper scaling on mobile devices */
+    meta[name="viewport"] {
+      width: device-width;
+    }
+
     /* Styles for the container div */
     .container {
       display: flex;
       flex-wrap: wrap;
-      max-width: 1100px; /* Set maximum width for the container */
+      max-width: 100%; /* Set maximum width for the container to fit iframe */
       margin: 0 auto; /* Center the container horizontally */
       justify-content: space-between; /* Add equal spacing between columns */
     }
@@ -24,7 +29,6 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start; /* Align content to the top */
-      max-height: 340px; /* Set a maximum height for the boxes */
       background-color: #f9f9f9; /* Light gray background color */
       border: 1px solid #ccc; /* Add a border to the boxes */
       border-radius: 10px; /* Add rounded corners */
@@ -101,5 +105,4 @@
   </div>
 </body>
 </html>
-
 
