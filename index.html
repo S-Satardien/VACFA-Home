@@ -76,6 +76,12 @@
       }
     }
   </style>
+  <script>
+    // Function to handle button click and open links in the parent tab
+    function openInParentTab(url) {
+      window.top.location.href = url;
+    }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -83,27 +89,26 @@
     <div class="item">
       <h1>The Beginning</h1>
       <p>​​The Vaccines for Africa Initiative (VACFA) is a non-profit academic unit founded in 2009 by Professor Gregory Hussey, who is the Director. We are in the Department of Public Health and Family Medicine, within Faculty of Health Sciences at the University of Cape Town.</p>
-      <a href="https://health.uct.ac.za/vacfa/about-vacfa/who-we-are" target="_blank"><button>Learn More</button></a>
+      <button onclick="openInParentTab('https://health.uct.ac.za/vacfa/about-vacfa/who-we-are')">Learn More</button>
     </div>
     <div class="item">
       <h1>Meet the Team</h1>
       <p>At VACFA, our exceptional team is passionately dedicated to fostering a healthier Africa through vaccination. With distinguished researchers, healthcare professionals, and visionary leaders, we curate cutting-edge resources and provide comprehensive training to empower individuals across the continent.</p>
-      <a href="https://health.uct.ac.za/vacfa/about-vacfa/vacfa-team" target="_blank"><button>Learn More</button></a>
+      <button onclick="openInParentTab('https://health.uct.ac.za/vacfa/about-vacfa/vacfa-team')">Learn More</button>
     </div>
 
     <!-- Second row -->
     <div class="item">
       <h1>Mission and Vision</h1>
       <p>​​Our carefully crafted Vision and Mission is the drive behind what we do.....</p>
-      <a href="https://health.uct.ac.za/vacfa/about-vacfa/vision-mission" target="_blank"><button>Learn More</button></a>
+      <button onclick="openInParentTab('https://health.uct.ac.za/vacfa/about-vacfa/vision-mission')">Learn More</button>
     </div>
     <div class="item">
       <h1>Our Research</h1>
       <p>​​The team at Vaccines for Africa Initiative (VACFA) comprises a remarkable assembly of renowned scholars, each bringing their invaluable expertise and vast knowledge to our collective efforts. As a cohesive and passionate unit, we have collaborated on numerous groundbreaking research projects, diligently crafting articles and papers on a diverse array of topics. </p>
-      <a href="https://health.uct.ac.za/vacfa/our-research/published-studies" target="_blank"><button>Learn More</button></a>
+      <button onclick="openInParentTab('https://health.uct.ac.za/vacfa/our-research/published-studies')">Learn More</button>
     </div>
   </div>
 </body>
 </html>
-
 
